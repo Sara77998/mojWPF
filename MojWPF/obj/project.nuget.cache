@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Su+gJwG5j4nfjboTyKFYPFOOaBnsqbulnKS+6bFkY5McG852GhQBbwW5VEfk4ckpkX8oXfCUC6/K6X9ZSmWSWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SaraC\\source\\repos\\MojWPF\\MojWPF\\MojWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SaraC\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512"
+  ],
+  "logs": []
+}

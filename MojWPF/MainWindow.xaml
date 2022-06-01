@@ -1,0 +1,116 @@
+﻿<Window x:Class="MojWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:local="clr-namespace:MojWPF"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" Height="500" Width="800">
+
+    <Border Background="#FFE2E2E2" CornerRadius="15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--levi deo-->
+            <Border Background="#FF2C2C40" CornerRadius="15" BorderBrush="#FF2C2C40">
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0.4*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--slikaAirbnb-->
+                    <Border CornerRadius="10" Margin="20">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,3">
+                                <GradientStop Color="#FF2153B7" Offset="0"></GradientStop>
+                                <GradientStop Color="#FFD57ADA" Offset="0.5"></GradientStop>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Height="60">
+                            <fa:IconImage Icon="Airbnb" Margin="5 5 15 5" Foreground="#FFE2E2E2"></fa:IconImage>
+                            <TextBlock Text="Airbnb" FontSize="20" FontWeight="SemiBold" Foreground="#FFE2E2E2" 
+                                       FontFamily="Bahnschrift" VerticalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!--naigator-->
+                    <Grid Grid.Row="1">
+                        
+                        <StackPanel>
+                            <Separator Height="0.5" Background="#fff" Margin="20 5 20 10" VerticalAlignment="Top"></Separator>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:IconImage Icon="Home" Margin="20 10" Foreground="#a5a1f5"></fa:IconImage>
+                                    <TextBlock Text="Home" VerticalAlignment="Center" Margin="0 0 0 0"
+                                               FontWeight="SemiBold" FontFamily="Bahnschrift" FontSize="12"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:IconImage Icon="AddressBook" Margin="20 10" Foreground="#a5a1f5"></fa:IconImage>
+                                    <TextBlock Text="Plan" VerticalAlignment="Center" Margin="5 0 0 0"
+                                               FontWeight="SemiBold" FontFamily="Bahnschrift" FontSize="12"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:IconImage Icon="Calendar" Margin="20 10" Foreground="#a5a1f5"></fa:IconImage>
+                                    <TextBlock Text="Calendar" VerticalAlignment="Center" Margin="5 0 0 0"
+                                               FontWeight="SemiBold" FontFamily="Bahnschrift" FontSize="12"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <fa:IconImage Icon="Teamspeak" Margin="20 10" Foreground="#a5a1f5"></fa:IconImage>
+                                    <TextBlock Text="Team" VerticalAlignment="Center" Margin="5 0 0 0"
+                                               FontWeight="SemiBold" FontFamily="Bahnschrift" FontSize="12"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            
+
+                        </StackPanel>
+                    </Grid>
+                    
+                    <!--slika-->
+                    <Grid Grid.Row="2">
+                        <Image Source="/Slike/deadline.png" ></Image>
+                    </Grid>
+
+
+                </Grid>
+            </Border>
+            <!--desni deo-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.2*" ></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBox Style="{StaticResource textbox}" Width="140" Height="20" Margin="10 25 50 5"></TextBox>
+                    <Button BorderBrush="Transparent" Margin="30 0">
+                        <Image Source="/slike/development.png" Height="50" Width="50"></Image>
+                    </Button>
+                    <Button BorderBrush="Transparent">
+                        <Image Source="/slike/man.png" Height="50" Width="50" Margin="10"></Image>
+                    </Button>
+                
+                   
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+        
+    </Border>
+   
+</Window>
